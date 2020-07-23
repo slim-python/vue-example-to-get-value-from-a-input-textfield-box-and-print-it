@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="vue.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for vue</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <p id="title">Enter any number in the box below</p>
+        <p id="result">{{ message }}</p>
+        <input id="textbox" type="number" placeholder="enter number" name="test" v->
+        <button v-on:click="but">submit</button>
+    </div>
+
+
+
+    <script>
+
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: ''
+            },
+            methods: {
+                but: function () {
+                    this.message = document.querySelector("input[name=test]").value
+                }
+            }
+        })
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
